@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="315dp"
+        app:srcCompat="@drawable/home_screen" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtCadastro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="108dp"
+            android:text="Não tem uma conta?"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.368"
+            app:layout_constraintStart_toStartOf="parent"></TextView>
+
+        <TextView
+            android:id="@+id/txtCadastrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cadastra-se"
+            android:textColor="#6B9C5E"
+            app:layout_constraintBottom_toBottomOf="@+id/txtCadastro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.586"
+            app:layout_constraintStart_toStartOf="@+id/txtCadastro"
+            app:layout_constraintTop_toTopOf="@+id/txtCadastro"
+            app:layout_constraintVertical_bias="0.0"></TextView>
+
+        <Button
+            android:id="@+id/btLogin"
+            android:layout_width="151dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#92BD86"
+            android:text="Log in"
+            tools:layout_editor_absoluteX="130dp"
+            tools:layout_editor_absoluteY="202dp"
+            tools:ignore="MissingConstraints"></Button>
+
+        <EditText
+            android:id="@+id/txtSenha"
+            android:layout_width="293dp"
+            android:layout_height="42dp"
+            android:inputType="textPassword"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="134dp"
+            tools:ignore="MissingConstraints">
+
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:labelFor="@+id/txtSenha"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:text="Senha:"
+            android:textColor="#6B9C5E"
+            tools:layout_editor_absoluteX="179dp"
+            tools:layout_editor_absoluteY="115dp"
+            tools:ignore="MissingConstraints"></TextView>
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="293dp"
+            android:layout_height="42dp"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="49dp"
+            tools:ignore="MissingConstraints"></EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:labelFor="@+id/txtEmail"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:text="Email:"
+            android:textColor="#6B9C5E"
+            tools:layout_editor_absoluteX="181dp"
+            tools:layout_editor_absoluteY="30dp"
+            tools:ignore="MissingConstraints"></TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
