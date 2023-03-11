@@ -1,2 +1,2 @@
-# esg-fiap
-Projeto de ESG - FIAP
+# 🌍🍀 ESG - FIAP
+* Projeto acadêmico. 
