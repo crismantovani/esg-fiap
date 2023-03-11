@@ -11,8 +11,9 @@
 
     <ImageView
         android:id="@+id/imgTop"
-        android:layout_width="413dp"
+        android:layout_width="417dp"
         android:layout_height="153dp"
+        android:layout_marginStart="0dp"
         android:layout_marginTop="-2dp"
         android:contentDescription="@string/dc_vetor"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,6 +34,7 @@
 
     <EditText
         android:id="@+id/editTextEmailAddress"
+        android:OnClick = "OnClick"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="32dp"
@@ -55,6 +57,7 @@
 
     <EditText
         android:id="@+id/editTextPassword"
+
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="24dp"
